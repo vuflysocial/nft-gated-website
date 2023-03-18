@@ -2,11 +2,21 @@ import React from "react";
 
 export default function Dashboard() {
   const downloadPDF = () => {
-    window.open("likemelo.pdf");
+    const link = document.createElement("a");
+    link.href = "likemelo.pdf";
+    link.download = "likemelo.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const downloadVideo = () => {
-    window.open("likemelo.mp4");
+    const link = document.createElement("a");
+    link.href = "likemelo.mp4";
+    link.download = "likemelo.mp4";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const buttonStyle = {
@@ -24,7 +34,7 @@ export default function Dashboard() {
       <h1>Dashboard</h1>
       <p>Welcome to your dashboard!</p>
       <div>
-        <p>Download the PDF manual:</p>
+        <p>Download the PDF:</p>
         <button onClick={downloadPDF} style={buttonStyle}>Download PDF</button>
       </div>
       <div>
@@ -37,3 +47,4 @@ export default function Dashboard() {
     </div>
   );
 }
+

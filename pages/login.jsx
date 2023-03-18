@@ -9,10 +9,9 @@ export default function Login() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>Auth - NFT Gated Content</h1>
+      <h1 className={styles.h1}>Auth - Like Melo NFT Gate</h1>
       <p className={styles.explain}>
-        Serve exclusive content to users who own an NFT from your collection,
-        using{" "}
+        Only holder of our Like Melo NFT are allowed beyond this point!{" "}
         <b>
           <a
             href="https://portal.thirdweb.com/building-web3-apps/authenticating-users"
@@ -31,7 +30,7 @@ export default function Login() {
         <Link className={styles.purple} href="/">
           main page
         </Link>{" "}
-        unless you own an NFT from our collection!
+        unless you own a Like Melo NFT from our collection!
       </p>
 
       <hr className={styles.divider} />
@@ -45,7 +44,7 @@ export default function Login() {
           <p>Please connect your wallet to continue.</p>
         )}
 
-        <ConnectWallet accentColor="#F213A4" />
+        <ConnectWallet accentColor="darkorange" />
       </>
     </div>
   );

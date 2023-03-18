@@ -7,11 +7,19 @@ import styles from "../styles/Home.module.css";
 export default function Login() {
   const address = useAddress(); // Get the user's address
 
+  const downloadVideo = () => {
+    window.open("downloads/likemelo.mp4");
+  };
+
+  const downloadPDF = () => {
+    window.open("downloads/likemelo.pdf");
+  };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.h1}>Auth - Like Melo NFT Gate</h1>
       <p className={styles.explain}>
-        Only holder of our Like Melo NFT are allowed beyond this point!{" "}
+        Only holders of our Like Melo NFT are allowed beyond this point!{" "}
         <b>
           <a
             href="https://portal.thirdweb.com/building-web3-apps/authenticating-users"
@@ -45,18 +53,19 @@ export default function Login() {
         )}
 
         <ConnectWallet accentColor="darkorange" />
-      </>
-      <div className={styles.downloadContainer}>
-        {isFeatureEnabled("has_nft") ? (
-          <>
-            <a href="/Download/video.mp4" download>Download Video</a>
-            <a href="/Download/document.pdf" download>Download PDF</a>
-          </>
-        ) : (
-          <p>You don't have the required NFT to download files.</p>
+
+        {address && (
+          <div className={styles.download}>
+            <p>
+              Download the video tutorial and PDF manual for using our NFTs:
+            </p>
+            <div className={styles.downloadLinks}>
+              <button onClick={downloadVideo}>Download Video</button>
+              <button onClick={downloadPDF}>Download PDF</button>
+            </div>
+          </div>
         )}
-      </div>
+      </>
     </div>
   );
 }
-

@@ -11,7 +11,7 @@ export default function Login() {
     <div className={styles.container}>
       <h1 className={styles.h1}>Auth - Like Melo NFT Gate</h1>
       <p className={styles.explain}>
-        Only holder of our Like Melo NFT are allowed beyond this point!{" "}
+        Only holders of our Like Melo NFT are allowed beyond this point!{" "}
         <b>
           <a
             href="https://portal.thirdweb.com/building-web3-apps/authenticating-users"

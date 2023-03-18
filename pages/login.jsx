@@ -46,16 +46,6 @@ export default function Login() {
 
         <ConnectWallet accentColor="darkorange" />
       </>
-      <div className={styles.downloadContainer}>
-        {isFeatureEnabled("has_nft") ? (
-          <>
-            <a href="/Download/video.mp4" download>Download Video</a>
-            <a href="/Download/document.pdf" download>Download PDF</a>
-          </>
-        ) : (
-          <p>You don't have the required NFT to download files.</p>
-        )}
-      </div>
     </div>
   );
 }

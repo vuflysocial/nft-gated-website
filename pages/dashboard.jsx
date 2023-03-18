@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Dashboard() {
   const downloadPDF = () => {
-    window.open("./downloads/likemelo.pdf");
+    window.open("/downloads/likemelo.pdf");
   };
 
   const downloadVideo = () => {
-    window.open("./downloads/likemelo.mp4");
+    window.open("/downloads/likemelo.mp4");
   };
 
   return (
@@ -14,14 +14,15 @@ export default function Dashboard() {
       <h1>Dashboard</h1>
       <p>Welcome to your dashboard!</p>
       <div>
-        <p>Download the PDF manual:</p>
+        <p>Download the PDF:</p>
         <button onClick={downloadPDF}>Download PDF</button>
       </div>
       <div>
         <p>Like Melo:</p>
         <video width="320" height="240" controls>
-          <source src="./downloads/likemelo.mp4" type="video/mp4" />
+          <source src="/downloads/likemelo.mp4" type="video/mp4" />
         </video>
+        <button onClick={downloadVideo}>Download Video</button>
       </div>
     </div>
   );

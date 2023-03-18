@@ -17,7 +17,7 @@
 }
 
 .purple {
-  color: #9f2c9d;
+  color: darkorange;
 }
 
 .divider {
@@ -53,7 +53,7 @@
   min-width: 3rem;
   font-size: 1rem;
   background: #e5e5ea;
-  background-image: linear-gradient(to left, #cc25b3 0%, #418dff 101.52%);
+  background-image: linear-gradient(to left, darkorange, orange);
   color: #fff;
   width: 180px;
   text-align: center;

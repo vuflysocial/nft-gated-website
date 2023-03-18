@@ -22,13 +22,12 @@ export default function Dashboard() {
             src="https://www.kapwing.com/e/6415a7679383e00017cf4425?autoplay=true"
             style={{border: 0, height: "100%", left: 0, overflow: "hidden", position: "absolute", top: 0, width: "100%"}}
             title=""
-            width="100%">
-          </iframe>
+            width="100%"
+          ></iframe>
         </div>
-        <p style={{fontSize: "12px", textAlign: "right"}}>Video edited on <a href="https://www.kapwing.com/video-editor">Kapwing</a></p>
       </div>
       <div style={{margin: "20px 0"}}>
-        <h2>Video 2</h2>
+        <h2></h2>
         <div style={{height: "450.00px", width: "300.00px", position: "relative"}}>
           <iframe
             allow="autoplay; gyroscope;"
@@ -38,10 +37,9 @@ export default function Dashboard() {
             src="https://www.kapwing.com/e/6415a856d5600e040aacea96?autoplay=true"
             style={{border: 0, height: "100%", left: 0, overflow: "hidden", position: "absolute", top: 0, width: "100%"}}
             title=""
-            width="100%">
-          </iframe>
+            width="100%"
+          ></iframe>
         </div>
-        <p style={{fontSize: "12px", textAlign: "right"}}>Video edited on <a href="https://www.kapwing.com/video-editor">Kapwing</a></p>
       </div>
     </div>
   );

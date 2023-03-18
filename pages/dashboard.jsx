@@ -3,7 +3,7 @@ import React from "react";
 export default function Dashboard() {
   const downloadPDF = () => {
     const link = document.createElement("a");
-    link.href = "likemelo.pdf";
+    link.href = "./likemelo.pdf";
     link.download = "likemelo.pdf";
     document.body.appendChild(link);
     link.click();
@@ -12,7 +12,7 @@ export default function Dashboard() {
 
   const downloadVideo = () => {
     const link = document.createElement("a");
-    link.href = "likemelo.mp4";
+    link.href = "./likemelo.mp4";
     link.download = "likemelo.mp4";
     document.body.appendChild(link);
     link.click();
@@ -40,7 +40,7 @@ export default function Dashboard() {
       <div>
         <p>Like Melo:</p>
         <video width="320" height="240" controls>
-          <source src="likemelo.mp4" type="video/mp4" />
+          <source src="./likemelo.mp4" type="video/mp4" />
         </video>
         <button onClick={downloadVideo} style={buttonStyle}>Download Video</button>
       </div>

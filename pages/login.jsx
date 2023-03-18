@@ -6,13 +6,29 @@ import styles from "../styles/Home.module.css";
 
 export default function Login() {
   const address = useAddress(); // Get the user's address
+  const [hasNFT, setHasNFT] = useState(false);
+
+  useEffect(() => {
+    async function checkNFT() {
+      if (address) {
+        const nftBalance = await getNFTBalance(address);
+        setHasNFT(nftBalance > 0);
+      }
+    }
+    checkNFT();
+  }, [address]);
+
+  const getNFTBalance = async (address) => {
+    // use your web3 instance to get the user's NFT balance
+    return 0; // placeholder
+  };
 
   const downloadVideo = () => {
-    window.open("downloads/likemelo.mp4");
+    window.location.href = "/downloads/likemelo.mp4";
   };
 
   const downloadPDF = () => {
-    window.open("downloads/likemelo.pdf");
+    window.location.href = "/downloads/likemelo.pdf";
   };
 
   return (
@@ -54,7 +70,7 @@ export default function Login() {
 
         <ConnectWallet accentColor="darkorange" />
 
-        {address && (
+        {hasNFT && (
           <div className={styles.download}>
             <p>
               Download the video tutorial and PDF manual for using our NFTs:
@@ -69,3 +85,4 @@ export default function Login() {
     </div>
   );
 }
+

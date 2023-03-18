@@ -1,32 +1,14 @@
 import React from "react";
 
 export default function Dashboard() {
-  const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "./likemelo.pdf";
-    link.download = "likemelo.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
-  const downloadVideo = () => {
-    const link = document.createElement("a");
-    link.href = "./likemelo.mp4";
-    link.download = "likemelo.mp4";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   const buttonStyle = {
-    borderRadius: "10px",
-    padding: "10px",
-    background: "#4CAF50",
-    color: "white",
-    border: "none",
-    cursor: "pointer",
-    margin: "10px"
+    backgroundColor: "#0070f3",
+    color: "#fff",
+    padding: "0.5rem 1rem",
+    borderRadius: "0.25rem",
+    textDecoration: "none",
+    display: "inline-block",
+    margin: "0.5rem 0",
   };
 
   return (
@@ -35,14 +17,15 @@ export default function Dashboard() {
       <p>Welcome to your dashboard!</p>
       <div>
         <p>Download the PDF:</p>
-        <button onClick={downloadPDF} style={buttonStyle}>Download PDF</button>
+        <a href="/likemelo.pdf" download="likemelo.pdf" style={buttonStyle}>
+          Download PDF
+        </a>
       </div>
       <div>
         <p>Like Melo:</p>
         <video width="320" height="240" controls>
-          <source src="./likemelo.mp4" type="video/mp4" />
+          <source src="/likemelo.mp4" type="video/mp4" />
         </video>
-        <button onClick={downloadVideo} style={buttonStyle}>Download Video</button>
       </div>
     </div>
   );

@@ -5,8 +5,9 @@ import { getUser } from "../auth.config";
 import checkBalance from "../util/checkBalance";
 import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
-export default function Home() {
+export default function Home({ dashboardUrl }) {
   const { logout } = useLogout();
   const { isLoggedIn, isLoading } = useUser();
   const router = useRouter();
@@ -23,6 +24,10 @@ export default function Home() {
       <p className={styles.explain}>
         Thanks for being a member of our NFT community!
       </p>
+
+      <Link href={dashboardUrl}>
+        <a className={styles.link}>Go to Dashboard</a>
+      </Link>
 
       <button className={styles.mainButton} onClick={logout}>
         Logout
@@ -53,7 +58,7 @@ export async function getServerSideProps(context) {
   // Instantiate our SDK
   const sdk = ThirdwebSDK.fromPrivateKey(
     process.env.THIRDWEB_AUTH_PRIVATE_KEY,
-    "mumbai"
+    "binance"
   );
 
   // Check to see if the user has an NFT
@@ -72,6 +77,10 @@ export async function getServerSideProps(context) {
 
   // Finally, return the props
   return {
-    props: {},
+    props: {
+      dashboardUrl: "/dashboard",
+    },
   };
 }
+
+

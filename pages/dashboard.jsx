@@ -2,11 +2,21 @@ import React from "react";
 
 export default function Dashboard() {
   const downloadPDF = () => {
-    window.open("/downloads/likemelo.pdf");
+    window.open("likemelo.pdf");
   };
 
   const downloadVideo = () => {
-    window.open("/downloads/likemelo.mp4");
+    window.open("likemelo.mp4");
+  };
+
+  const buttonStyle = {
+    borderRadius: "10px",
+    padding: "10px",
+    background: "#4CAF50",
+    color: "white",
+    border: "none",
+    cursor: "pointer",
+    margin: "10px"
   };
 
   return (
@@ -14,15 +24,15 @@ export default function Dashboard() {
       <h1>Dashboard</h1>
       <p>Welcome to your dashboard!</p>
       <div>
-        <p>Download the PDF:</p>
-        <button onClick={downloadPDF}>Download PDF</button>
+        <p>Download the PDF manual:</p>
+        <button onClick={downloadPDF} style={buttonStyle}>Download PDF</button>
       </div>
       <div>
         <p>Like Melo:</p>
         <video width="320" height="240" controls>
-          <source src="/downloads/likemelo.mp4" type="video/mp4" />
+          <source src="likemelo.mp4" type="video/mp4" />
         </video>
-        <button onClick={downloadVideo}>Download Video</button>
+        <button onClick={downloadVideo} style={buttonStyle}>Download Video</button>
       </div>
     </div>
   );

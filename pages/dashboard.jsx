@@ -25,7 +25,7 @@ export default function Dashboard() {
             width="100%">
           </iframe>
         </div>
-        <p style={{fontSize: "12px", textAlign: "right"}}>
+        <p style={{fontSize: "12px", textAlign: "right"}}>Video edited on <a href="https://www.kapwing.com/video-editor">Kapwing</a></p>
       </div>
       <div style={{margin: "20px 0"}}>
         <h2>Video 2</h2>
@@ -41,7 +41,7 @@ export default function Dashboard() {
             width="100%">
           </iframe>
         </div>
-        <p style={{fontSize: "12px", textAlign: "right"}}>
+        <p style={{fontSize: "12px", textAlign: "right"}}>Video edited on <a href="https://www.kapwing.com/video-editor">Kapwing</a></p>
       </div>
     </div>
   );

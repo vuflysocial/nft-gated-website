@@ -25,6 +25,10 @@ export default function Dashboard() {
             width="100%"
           ></iframe>
         </div>
+<div>
+<iframe src="https://cattree.herokuapp.com/rooms" width="100%" height="500px"></iframe>
+</div>
+
       </div>
       <div style={{margin: "20px 0"}}>
         <h2></h2>

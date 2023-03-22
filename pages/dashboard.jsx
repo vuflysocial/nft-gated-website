@@ -10,40 +10,12 @@ export default function Dashboard() {
         <a href="https://drive.google.com/drive/folders/1D86x5zhlhjL0WPkguLZMGvcPmDRfY6US?usp=sharing" target="_blank" rel="noopener noreferrer">
           <button style={{borderRadius: "5px"}}>Download from Google Drive</button>
         </a>
-      </div>
-      <div style={{margin: "20px 0"}}>
-        <h2>Like Melo</h2>
-        <div style={{height: 0, paddingBottom: "56.25%", position: "relative", width: "100%"}}>
-          <iframe
-            allow="autoplay; gyroscope;"
-            allowFullScreen
-            height="100%"
-            referrerPolicy="strict-origin"
-            src="https://www.kapwing.com/e/6415a7679383e00017cf4425?autoplay=true"
-            style={{border: 0, height: "100%", left: 0, overflow: "hidden", position: "absolute", top: 0, width: "100%"}}
-            title=""
-            width="100%"
-          ></iframe>
-        </div>
+     
 <div>
-<iframe src="https://cattree.herokuapp.com/rooms" width="100%" height="500px"></iframe>
+<iframe src="https://cattree.herokuapp.com/rooms" width="300%" height="500px"></iframe>
 </div>
 
-      </div>
-      <div style={{margin: "20px 0"}}>
-        <h2></h2>
-        <div style={{height: "450.00px", width: "300.00px", position: "relative"}}>
-          <iframe
-            allow="autoplay; gyroscope;"
-            allowFullScreen
-            height="100%"
-            referrerPolicy="strict-origin"
-            src="https://www.kapwing.com/e/6415a856d5600e040aacea96?autoplay=true"
-            style={{border: 0, height: "100%", left: 0, overflow: "hidden", position: "absolute", top: 0, width: "100%"}}
-            title=""
-            width="100%"
-          ></iframe>
-        </div>
+     
       </div>
     </div>
   );

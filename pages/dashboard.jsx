@@ -27,7 +27,8 @@ export default function Dashboard() {
             </iframe>
             <div style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", backgroundColor: "rgba(255, 255, 255, 0.8)", padding: "10px"}}>
               <p style={{textAlign: "center", fontWeight: "bold", marginBottom: "5px"}}>Attention!</p>
-              <p style={{textAlign: "center", fontSize: "14px"}}>This content may contain flashing or moving images.</p>
+              <p style={{textAlign: "center", fontSize: "14px"}}>This content may contain flashing or moving images.
+                The Meloshians are a collective of Ai cat robots...it is unknown what they want with us earthlings or how they will proceed into our world. i only know of the message that was left...it said war... </p>
             </div>
           </div>
           <p><a href="https://imgflip.com/gif/7fociq">via Imgflip</a></p>

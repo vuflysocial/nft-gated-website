@@ -31,7 +31,7 @@ export default function Dashboard() {
                 The Meloshians are a collective of Ai cat robots...it is unknown what they want with us earthlings or how they will proceed into our world. i only know of the message that was left...it said war... </p>
             </div>
           </div>
-          <p><a href="https://imgflip.com/gif/7fociq">via Imgflip</a></p>
+          <p><a href="">via MELOSHIAN</a></p>
         </div>
       </div>
     </div>
